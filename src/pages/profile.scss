@@ -1,0 +1,227 @@
+.Profile-Holder {
+    padding: 50px;
+    background-color: #FFE6C8;
+    display: flex;
+    flex-direction: row;
+
+    .Avatar {
+        height: 100%;
+        width: 22%;
+        // border: 10px solid #774D29;
+
+        .Avatar-img {
+            width: 100%;
+        }
+    }
+
+    .badges {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        // border: 10px solid #774D29;
+
+        .badge-dsply {
+            width: 100%;
+        }
+    }
+
+    .Profile {
+        width: 60%;
+        // border: 10px solid #774D29;
+
+        .basic-info {
+            display: flex;
+            flex-direction: row;
+            padding-left: 5%;
+            padding-right: 5%;
+            // border: 10px solid red;
+
+            .text {
+                text-align: left;
+                margin-right: 20%;
+
+                .prof-holder {
+                    margin-bottom: 5%;
+
+                    .prof-title {
+                        margin: 0;
+                        padding: 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        font-style: italic;
+                    }
+
+                    .prof-info {
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 10%;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 30px;
+                        font-weight: 1000;
+                    }
+
+                    .prof-lvl {
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 10%;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        font-weight: 800;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .icon-profile {
+                height: 100%;
+                border: 10px solid #774D29;
+                border-radius: 50%;
+                color: #774D29;
+                align-self: center;
+                justify-content: center;
+            }
+        }
+
+        .stats {
+            border-top: 10px double #774D29;
+            margin-top: 10%;
+            padding-top: 10%;
+
+            .stats-label {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-style: italic;
+                text-decoration: underline;
+            }
+
+            .stats-content {
+                display: flex;
+                justify-content: space-around;
+
+                .stats-holder {
+                    // border: 2px solid #774D29;
+
+                    .stats-title {
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size: 25px;
+                        font-weight: 500;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .stats-cnt {
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size: 80px;
+                        font-weight: 1000;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .Profile-Holder {
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .Profile {
+            width: 100%;
+            // border: 10px solid #774D29;
+
+            .basic-info {
+                padding-left: 0%;
+                padding-right: 0%;
+                flex-direction: column-reverse;
+
+
+                .text {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .prof-holder {
+
+                        .prof-title {
+                            font-size: 1rem;
+                        }
+
+                        .prof-info {
+                            font-size: 1rem;
+                            font-weight: 800;
+                        }
+
+                        .prof-lvl {
+                            font-size: 1rem;
+                            font-weight: 800;
+                        }
+                    }
+                }
+
+                .icon-profile {
+                    margin-bottom: 5%;
+                }
+            }
+
+            .stats {
+
+                border-top: 10px double #774D29;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+
+                .stats-label {
+                    font-size: 1rem;
+                }
+
+                .stats-content {
+
+                    .stats-holder {
+                        // border: 2px solid #774D29;
+
+                        .stats-title {
+                            font-size: 1rem;
+                        }
+
+                        .stats-cnt {
+                            font-size: 3rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .badges {
+            width: 100%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 10px double #774D29;
+
+            .badge-dsply {
+                width: 30%;
+            }
+        }
+
+        .Avatar {
+            // border: 1px solid red;
+            // height: 100%;
+            width: 100%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            border-top: 10px double #774D29;
+        }
+    }
+
+}

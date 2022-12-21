@@ -1,0 +1,308 @@
+.create-guild-btn,
+.join-guild-btn {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 50px;
+    font-weight: 800;
+    border: none;
+    margin-left: 50px;
+    background-color: #774D29;
+    color: #FFE6C8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        box-shadow: 4px 3px 9px -1px black;
+        transform: translateY(-3px);
+    }
+}
+
+.modal-add-btn {
+    right: 5px;
+    top: 10px;
+    align-self: flex-end;
+    position: fixed;
+    background-color: #FFE6C8;
+    color: #774D29;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    size: 100%;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.modal-content {
+    position: absolute;
+    color: #FFE6C8;
+    padding: 12px 15px;
+    background-color: #774d29;
+    border: none;
+    border-radius: 50px;
+    max-width: 60%;
+    align-items: center;
+
+    .modal-cls-btn {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        margin-right: 7rem;
+        float: right;
+        color: #FFE6C8;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .forms {
+        height: 100%;
+        width: 100%;
+        background: #774D29;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 50px;
+
+        input {
+            display: block;
+            border: none;
+            width: 80%;
+            margin: auto;
+            padding: 0px 20px;
+
+            font-size: medium;
+            transition: all 0.2s ease;
+
+            .create-input {
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+
+            &:focus {
+                outline: none;
+                border: none;
+            }
+
+            &:hover {
+                outline: 0.5px solid black;
+                box-shadow: 2px 2px 9px -1px black;
+            }
+        }
+
+
+        #title {
+            height: 4rem;
+            width: 80%;
+            margin-bottom: 2%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .date-categ-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            padding: 0px 20px;
+
+            #date {
+                height: 3rem;
+                width: auto;
+                margin-bottom: 2%;
+                margin-right: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic;
+                color: black;
+                flex-grow: 1;
+
+            }
+
+            #category {
+                border: none;
+                height: 3rem;
+                width: auto;
+                margin-bottom: 2%;
+                margin-left: 2px;
+                padding: 0px 20px;
+                font-size: medium;
+                transition: all 0.2s ease;
+                flex-grow: 1;
+
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+
+                &:hover {
+                    outline: 0.5px solid black;
+                    box-shadow: 2px 2px 9px -1px black;
+                }
+
+                .categ-list {
+                    color: black;
+                    font-size: large;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+
+
+        #description {
+            height: 10rem;
+            width: 80%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-style: italic;
+            color: black;
+        }
+
+        #guildName,
+        #guildID {
+            height: 3rem;
+            border-radius: 20px;
+            margin-bottom: 2%;
+        }
+
+        .btn-holder {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            height: 3rem;
+            margin: auto;
+            border-radius: 50px;
+            font-weight: 800px;
+            border: none;
+
+            .create-btn,
+            .cancel-btn,
+            .join-btn,
+            .submit-btn {
+                width: 80px;
+                height: 2rem;
+                border-radius: 50px;
+                font-weight: 800;
+                border: none;
+                background-color: #FFE6C8;
+                color: #774D29;
+                cursor: pointer;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    box-shadow: 4px 3px 9px -1px black;
+                    transform: translateY(-3px);
+                }
+
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .create-guild-btn,
+    .join-guild-btn {
+        width: 5rem;
+        height: 3rem;
+        border-radius: 50px;
+        font-weight: 800;
+        border: none;
+        margin-left: 50px;
+        background-color: #774D29;
+        color: #FFE6C8;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            box-shadow: 4px 3px 9px -1px black;
+            transform: translateY(-3px);
+        }
+    }
+
+
+
+    .modal,
+    .overlay {
+        left: 20%;
+
+    }
+
+    .modal-content {
+        width: 100%;
+        margin-right: 20%;
+
+        .forms {
+            margin: 0;
+            align-items: center;
+
+            .date-categ-holder {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+
+                #date {
+                    width: 80%;
+                    margin: 0;
+                    margin-bottom: 2%;
+                }
+
+                #category {
+                    width: 97.5%;
+                    margin: 0;
+                    margin-bottom: 2%;
+                }
+            }
+
+
+            #description {
+                height: 10rem;
+                width: 80%;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                margin-bottom: 5%;
+                font-family: Arial, Helvetica, sans-serif;
+
+                font-style: italic;
+                color: black;
+            } 
+        }
+    }
+}

@@ -1,0 +1,155 @@
+//Every Quest Page
+.quest-page {
+  padding: 50px;
+  background-color: #FFE6C8;
+}
+
+//Guild
+.guild-page {
+  padding: 50px;
+  background-color: #FFE6C8;
+}
+
+// Achievement page 
+.achievement-page {
+  padding: 50px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFE6C8;
+}
+
+.card {
+  height: auto;
+  width: 20%;
+  padding: 10px;
+  margin: 0;
+
+  .card-img {
+    max-width: 100%;
+
+  }
+
+  .card-title {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #774D29;
+  }
+
+  .card-desc {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    color: #774D29;
+  }
+}
+
+
+
+//Task
+.task-list {
+  margin-right: 10px;
+
+  .task-content {
+    border: solid #774D29;
+    border-width: 6px;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+
+    .task-holder {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      .task-title {
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        text-align: left;
+        color: #774D29;
+        margin: 0;
+      }
+
+      .task-des {
+        font-family: sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        text-align: left;
+        color: #774D29;
+        margin: 0;
+
+      }
+
+    }
+
+    .task-exp {
+      width: 25%;
+      font-family: sans-serif;
+      font-size: 15px;
+      font-style: italic;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      color: #774D29;
+      margin: 0;
+      padding-right: 1 5px;
+    }
+
+    .task-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .cls-btn {
+        color: #774D29;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
+      }
+
+
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  //Every Quest Page
+  .quest-page {
+    padding: 5%;
+  }
+
+  //Task
+  .task-list {
+    margin-top: 25%;
+    margin-right: 0;
+  }
+
+  //Guild
+  .guild-page {
+    padding: 5%;
+  }
+
+  // Achievement page 
+  .achievement-page {
+    padding: 5%;
+  }
+
+  .card {
+    height: auto;
+    width: 40%;
+  }
+}
